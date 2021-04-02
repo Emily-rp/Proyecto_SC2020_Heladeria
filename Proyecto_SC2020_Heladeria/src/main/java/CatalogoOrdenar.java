@@ -19,12 +19,12 @@ public class CatalogoOrdenar {
     
 }
 
-    public int getOprtion() {
-        return oprtion;
+    public int getOption() {
+        return option;
     }
 
-    public void setOprtion(int oprtion) {
-        this.oprtion = oprtion;
+    public void setOption(int option) {
+        this.option = option;
     }
     
 }
