@@ -9,18 +9,6 @@
  * @author emily
  */
 public class MenuRestaurante {
-String nombre;
-float precio;
-String Ingredientes;
-
-
-
-
-
-
-
-
-
 
 
 }
