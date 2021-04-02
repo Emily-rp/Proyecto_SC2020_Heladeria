@@ -1,4 +1,8 @@
 
+/* esto solo es una prueba de como poder hacer una ventana para el proyecto,
+no tomar en cuenta 
+*/
+
 import javax.swing.JOptionPane;
 
 public class VentanaPrincipal extends javax.swing.JFrame {

@@ -55,6 +55,7 @@ public class HeladeriaDulceTropic {
                         else if (!usuario.equals(admi1.getUsuario()) && !contrasena.equals(admi1.getContrasena())) {
                             JOptionPane.showConfirmDialog(null, "Su usuario o contraseña son incorrectos"
                                     + "\nLleva " + contador + " intentos de 3, \n¿Desea volver a intentarlo?");
+                            
                             if (contador == 3) {
                                 JOptionPane.showMessageDialog(null, "Lo sentimos, ya utilizó los 3 intentos permitidos");
                                 break;

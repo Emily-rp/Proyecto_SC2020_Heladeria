@@ -1,5 +1,6 @@
 
 public class Cliente {
+
     private String Usuario = "";
     private String Contrasena = "";
     private String Nombre = "";
@@ -7,10 +8,10 @@ public class Cliente {
     private String FechaCumpleano = "";
     private int Edad = 0;
     private boolean estado = false;
-    
-    public Cliente() {    
+
+    public Cliente() {
     }// constructor
-        
+
     public String getUsuario() {
         return Usuario;
     }
@@ -66,7 +67,5 @@ public class Cliente {
     public void setEstado(boolean estado) {
         this.estado = estado;
     }
-    
-    
-} 
 
+}
