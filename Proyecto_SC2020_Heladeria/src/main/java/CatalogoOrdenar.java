@@ -5,8 +5,8 @@ import javax.swing.JOptionPane;
 public class CatalogoOrdenar {
     
     
-    int oprtion = 0;
-    do {  
+    int option = 0;
+    do  {  
     opcion = Interguer.ParseInt(JOptionPane.showInputDialog(
                          "Bienvenido a Dulce Tropic"
                          + "\nTienes la opcion de elegir entre los Sunday y los Helados"
@@ -18,5 +18,13 @@ public class CatalogoOrdenar {
                         
     
 }
+
+    public int getOprtion() {
+        return oprtion;
+    }
+
+    public void setOprtion(int oprtion) {
+        this.oprtion = oprtion;
+    }
     
 }
