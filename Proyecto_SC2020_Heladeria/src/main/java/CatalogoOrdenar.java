@@ -6,10 +6,16 @@ public class CatalogoOrdenar {
     
     
     int oprtion = 0;
-    do  
+    do {  
     opcion = Interguer.ParseInt(JOptionPane.showInputDialog(
-                        "Bienvenido a Dulce Tropic"
-                        )
+                         "Bienvenido a Dulce Tropic"
+                         + "\nTienes la opcion de elegir entre los Sunday y los Helados"
+                         + "\n\nDigite la opción que desea realizar"
+                         + "\n1.Sunday "
+                         + "\n2.Helado "
+                         + "\n0.Salir"));    
+                              
+                        
     
 }
     
