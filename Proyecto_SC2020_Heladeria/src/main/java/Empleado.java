@@ -13,6 +13,7 @@ seran un total de 10 empleados y lo sdatos se llevaran por medio de un arreglo
 public class Empleado {
 
     String nombre;
+    String apellido;
     String cedula;
     String cargo;
     int edad;
@@ -27,8 +28,9 @@ public class Empleado {
     public Empleado() {
     }
 
-    public Empleado(String nombre, String cedula, String cargo, int edad, int horasSemana, float pagoHora) {
+    public Empleado(String nombre, String apellido, String cedula, String cargo, int edad, int horasSemana, float pagoHora) {
         this.nombre = nombre;
+        this.apellido = apellido;
         this.cedula = cedula;
         this.cargo = cargo;
         this.horasSemana = horasSemana;
@@ -36,16 +38,16 @@ public class Empleado {
     }
 
     public void datosEmpleado() {
-        arreglo[0] = new Empleado("Emily Rodríguez", "116850795", "Cocina", 23, 40, 500000f);
-        arreglo[1] = new Empleado("j", "8102482394", "Cocina", 31, 40, 700500f);
-        arreglo[2] = new Empleado("Luciana Ricati", "1883947392", "Generente", 40, 40, 700000f);
-        arreglo[3] = new Empleado("Valerie García", "1883947392", "Cocina", 22, 40, 700000f);
-        arreglo[4] = new Empleado("Luis Diego Soto", "1883947392", "Mesero", 31, 40, 700000f);
-        arreglo[5] = new Empleado("Esteban Sanchez", "1883947392", "Generente", 31, 40, 700000f);
-        arreglo[6] = new Empleado("Max Pacheco", "1883947392", "Generente", 31, 31, 700000f);
-        arreglo[7] = new Empleado("L", "1883947392", "Mesero", 31, 40, 700000f);
-        arreglo[8] = new Empleado("Guillermo Pacheco", "1883947392", "Generente", 39, 40, 700000f);
-        arreglo[9] = new Empleado("Vanessa Serrano", "1883947392", "Cocina", 38, 40, 700000f);
+        arreglo[0] = new Empleado("Jorge","Jiménez","1 5348 2384","Gerente",31,45,700000);
+        arreglo[1] = new Empleado("Max", "Pacheco", "1 9402 4822","Cajero",30,20,300000);
+        arreglo[2] = new Empleado("Luciana", "Ricati", "9 3128 3123","Cajero",45,25,380000);
+        arreglo[3] = new Empleado("Valeri","García","1 8395 38973", "Cocina",22,45,500000);
+        arreglo[4] = new Empleado("Luis Diego", "Soto","3 8403 0982","Cocina",27,45,500000);
+        arreglo[5] = new Empleado("Guillermo","Pacheco","3 8924 8732","Encargado de Cocina",39,45,600000);
+        arreglo[6] = new Empleado("Esteban", "Sanchez", "2 9873 3234",;
+        arreglo[7] = new Empleado();
+        arreglo[8] = new Empleado();
+        arreglo[9] = new Empleado();
     }// fin datosEmpleado
 
     public void mostrarEmpleado() {
