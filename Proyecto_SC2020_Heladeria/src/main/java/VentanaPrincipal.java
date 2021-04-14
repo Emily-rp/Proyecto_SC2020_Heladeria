@@ -42,6 +42,11 @@ public class VentanaPrincipal extends javax.swing.JFrame {
                 menuMouseClicked(evt);
             }
         });
+        menu.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                menuActionPerformed(evt);
+            }
+        });
 
         salir.setText("salir");
         salir.setActionCommand("Salir");
@@ -132,8 +137,13 @@ public class VentanaPrincipal extends javax.swing.JFrame {
 
     private void menuMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_menuMouseClicked
         // TODO add your handling code here:
-        JOptionPane.showMessageDialog(null, "Entro a ordenar");
+       
     }//GEN-LAST:event_menuMouseClicked
+
+    private void menuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuActionPerformed
+        Menú menú = new Menú();
+        menú.setVisible(true);
+    }//GEN-LAST:event_menuActionPerformed
 
 
     // este es el main principal -----------------------------------------------
