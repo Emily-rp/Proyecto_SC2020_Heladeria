@@ -44,7 +44,7 @@ public class Empleado {
         arreglo[3] = new Empleado("Valeri","García","1 8395 38973", "Cocina",22,45,500000);
         arreglo[4] = new Empleado("Luis Diego", "Soto","3 8403 0982","Cocina",27,45,500000);
         arreglo[5] = new Empleado("Guillermo","Pacheco","3 8924 8732","Encargado de Cocina",39,45,600000);
-        arreglo[6] = new Empleado("Esteban", "Sanchez", "2 9873 3234",;
+        arreglo[6] = new Empleado("Esteban", "Sanchez", "2 9873 3234","Mesero",48,35,400000);
         arreglo[7] = new Empleado();
         arreglo[8] = new Empleado();
         arreglo[9] = new Empleado();
