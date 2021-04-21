@@ -9,10 +9,10 @@ public class CatalogoOrdenar {
                                         + "1.Helado \n"
                                         + "2.Sunday\n"
                                         + "3.Crepas\n"
-                                        + "4.Cono\n");
-                                        + "salir\n");    
-                              opcion=Interger.parseInt(op);
-                              switch(opcion){ 
+                                        + "4.Cono\n"
+                                        + "5.salir\n");    
+                              opcion=Integer.parseInt(op);
+                              switch(opcion){
                                   case 1: JOptionPane.showMessageDialog(null,"Escoge tu helado. opcion"); break; 
                                   case 2: JOptionPane.showInternalMessageDialog(null, "Escoge un Sunday a tu preferencia"); break;
                                   case 3: JOptionPane.showMessageDialog(null, "Escoge el Sabor de Crepa"); break;
