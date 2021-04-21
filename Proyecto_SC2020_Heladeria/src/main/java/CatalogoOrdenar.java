@@ -10,12 +10,14 @@ public class CatalogoOrdenar {
                                         + "2.Sunday\n"
                                         + "3.Crepas\n"
                                         + "4.Cono\n");
+                                        + "salir\n");    
                               opcion=Interger.parseInt(op);
-                              switch(opcion){
+                              switch(opcion){ 
                                   case 1: JOptionPane.showMessageDialog(null,"Escoge tu helado. opcion"); break; 
                                   case 2: JOptionPane.showInternalMessageDialog(null, "Escoge un Sunday a tu preferencia"); break;
                                   case 3: JOptionPane.showMessageDialog(null, "Escoge el Sabor de Crepa"); break;
-                                  case 4: JOptionPane.showInternalMessageDialog(null, "Escoge el sabor de tu cono"); break;  }   
+                                  case 4: JOptionPane.showInternalMessageDialog(null, "Escoge el sabor de tu cono"); break;
+                                  case 5: JOptionPane.showInternalMessageDialog(null, "Salir del menú"); break;  }   
     }
     
     
