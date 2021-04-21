@@ -52,7 +52,7 @@ public class HeladeriaDulceTropic {
                             admi1.menu();// aquí entra al menú de adminitrador
                             break;
                         }// aqui el usuario y contrasenna son iguales y entran al menú adminitradtivo.
-                        else if (!usuario.equals(admi1.getUsuario()) || !contrasena.equals(admi1.getContrasena())) {
+                        else if (!usuario.equals(admi1.getUsuario()) && !contrasena.equals(admi1.getContrasena())) {
                             JOptionPane.showConfirmDialog(null, "Su usuario o contraseña son incorrectos"
                                     + "\nLleva " + contador + " intentos de 3, \n¿Desea volver a intentarlo?");
                             
