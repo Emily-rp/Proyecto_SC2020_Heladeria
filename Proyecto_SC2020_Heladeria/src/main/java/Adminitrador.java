@@ -13,7 +13,6 @@ public class Adminitrador {
 
 // Aqui va el menú para ver las otras opciones---------------------------------
     public void menu() {
-        HeladeriaDulceTropic menu = new HeladeriaDulceTropic();
         Empleado empleado1 = new Empleado();
         Sucursal sucursal1 = new Sucursal();
         Inventario inventario1 = new Inventario();
