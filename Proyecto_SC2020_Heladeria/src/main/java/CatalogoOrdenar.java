@@ -48,7 +48,15 @@ public class CatalogoOrdenar {
                                             +"4- Caribean Style\n"
                                             +"5- Volver al menú\n");
                                             
-                                  case 4: JOptionPane.showInternalMessageDialog(null, "Escoge el sabor de tu cono"); break;
+                                  case 4: JOptionPane.showInternalMessageDialog(null, "Escoge el sabor de tu cono"); 
+                                    op=JOptionPane.showInputDialog("Que sabor deseas tu Cono\n"
+                                            +"1.Fresa\n"
+                                            +"2.Vainilla\n"
+                                            +"3.Chocolate\n"
+                                            +"4.Caramelo\n"
+                                            +"5.Oreo\n"
+                                            +"6.Salir\n");
+                                  
                                   case 5: JOptionPane.showInternalMessageDialog(null, "Salir del menú"); break;  }   
     }
     
