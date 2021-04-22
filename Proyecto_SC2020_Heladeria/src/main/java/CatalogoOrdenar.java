@@ -24,7 +24,7 @@ public class CatalogoOrdenar {
                 int numero1 = Integer.parseInt(JOptionPane.showInputDialog("Escoge el sabor de tu helado a tú prefencia:\n"
                         + "1- Helado m&m ₡2000 \n"
                         + "2- Helado Oreo ₡2000\n"
-                        + "3- Helado Chicle ₡2000\n"
+                        + "3- Helado Chicle ₡2500\n"
                         + "4-Helado light ₡2000\n"
                         + "5-Vuelve al menú Principal\n"));
 
@@ -32,13 +32,13 @@ public class CatalogoOrdenar {
                     numero1 = 2000;
                     JOptionPane.showMessageDialog(null, "Su precio es de " + numero1);
                 } else if (numero1 == 2) {
-                    numero1 = 3000;
+                    numero1 = 2000;
                     JOptionPane.showMessageDialog(null, "su precio es de" + numero1);
                 } else if (numero1 == 3) {
-                    numero1 = 3500;
+                    numero1 = 2500;
                     JOptionPane.showMessageDialog(null, "su precio es de" + numero1);
                 } else if (numero1 == 4) {
-                    numero1 = 4000;
+                    numero1 = 2000;
                     JOptionPane.showMessageDialog(null, "su precio es de" + numero1);
                 }
 
@@ -58,13 +58,13 @@ public class CatalogoOrdenar {
                     numero2 = 2000;
                     JOptionPane.showMessageDialog(null, "Su precio es de "+ numero2);
                 }else if (numero2 == 2) {
-                    numero2 = 3000;
+                    numero2 = 2000;
                             JOptionPane.showMessageDialog(null, "su precio es de"+ numero2 );
                 }else if (numero2 == 3){
-                    numero2 = 3500;
+                    numero2 = 2000;
                     JOptionPane.showMessageDialog(null, " Su precio es de "+ numero2);
                 }else if (numero2 == 4){
-                    numero2 = 4000;
+                    numero2 = 2000;
                 }
                 break;
                     
@@ -78,10 +78,21 @@ public class CatalogoOrdenar {
                         + "3- Manzana ₡2000\n"
                         + "4- Caribean Style ₡2500\n"
                         + "5- Volver al menú\n"));
-                if (numero3 == 3) {
-                    numero3 = 3000;
-                    JOptionPane.showMessageDialog(null, "Su precio es de 3000");
+              if (numero3 == 1) {
+                    numero2 = 3000;
+                    JOptionPane.showMessageDialog(null, "Su precio es de "+ numero3);
+                }else if (numero3 == 2) {
+                    numero2 = 3000;
+                            JOptionPane.showMessageDialog(null, "su precio es de"+ numero3 );
+                }else if (numero3 == 3){
+                    numero2 = 2000;
+                    JOptionPane.showMessageDialog(null, " Su precio es de "+ numero3);
+                }else if (numero3 == 4){
+                    numero2 = 2500;
                 }
+                break;
+                    
+                
 
             case 4:
                 JOptionPane.showMessageDialog(null, "Escoge el sabor de tu cono");
