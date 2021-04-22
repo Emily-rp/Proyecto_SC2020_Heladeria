@@ -45,7 +45,8 @@ public class Adminitrador {
                 case 4:
                     registro.mostrarClientes();
                     break;
-                case 5://ganancia
+                case 5:
+                    ganancia1.mostrarPlanilla();
                     break;
 
             }// fin switch
