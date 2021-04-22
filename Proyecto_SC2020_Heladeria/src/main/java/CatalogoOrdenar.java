@@ -51,22 +51,14 @@ public class CatalogoOrdenar {
                                             JOptionPane.showMessageDialog(null, "Su precio es de 2000");
                                                 
                                   
-                                  case 3: JOptionPane.showMessageDialog(null, "Escoge el Sabor de Crepa"); 
-                                   int numero3 = Integer.parseInt(JOptionPane.showInputDialog("Escoge entre diferentes sabores de crepas:\n"
+                                  case 3: JOptionPane.showMessageDialog (null, "Escoge el Sabor de Crepa"); 
+                                   int numero3 = Integer.parseInt(JOptionPane.showInputDialog ("Escoge entre diferentes sabores de crepas:\n"
                                             +"1- Dulce tentación ₡3000\n"
                                             +"2- frutos del bosque ₡3000\n"
                                             +"3- Manzana ₡2000\n" 
                                             +"4- Caribean Style ₡2500\n"
                                             +"5- Volver al menú\n"));
-                                            if (numero3 == 3) {
-                                        numero3 = 2000;
-                                            JOptionPane.showMessageDialog(null, "Su precio es de 2000");
-                                            if (numero1 == 1) {
-                                                 numero1 = 2000;
-                                            JOptionPane.showMessageDialog(null, "Su precio es de 2000");
-                                                    } else if (numero1 == 2) {
-                                                                b = 3000;
-                                            JOptionPane.showMessageDialog(null, "Su precio es de "3000);
+
                                             
                                   case 4: JOptionPane.showInternalMessageDialog(null, "Escoge el sabor de tu cono"); 
                                     op=JOptionPane.showInputDialog("Que sabor deseas tu Cono\n"
