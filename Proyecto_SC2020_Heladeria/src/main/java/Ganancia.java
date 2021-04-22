@@ -9,14 +9,7 @@
 public class Ganancia {
 
     private double montoActual;
-    Empleado planilla = new Empleado();
-    
-    public void mostrarPlanilla(){
-        planilla.datosEmpleado();
-        planilla.totalPlanilla();
-    }
-    
-    
+
     public Ganancia() {
     }
 
