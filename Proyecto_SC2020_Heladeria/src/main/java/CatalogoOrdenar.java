@@ -42,10 +42,6 @@ public class CatalogoOrdenar {
                     JOptionPane.showMessageDialog(null, "su precio es de" + numero1);
                 }
 
-        
-
-    
-
             case 2:
                 JOptionPane.showInternalMessageDialog(null, "Escoge un Sundae a tu preferencia");
                 int numero2 = Integer.parseInt(JOptionPane.showInputDialog("Escoge entre diferentes sabores tú Sundae:\n"
@@ -56,19 +52,17 @@ public class CatalogoOrdenar {
                         + "5.Salir\n"));
                 if (numero2 == 1) {
                     numero2 = 2000;
-                    JOptionPane.showMessageDialog(null, "Su precio es de "+ numero2);
-                }else if (numero2 == 2) {
+                    JOptionPane.showMessageDialog(null, "Su precio es de " + numero2);
+                } else if (numero2 == 2) {
                     numero2 = 2000;
-                            JOptionPane.showMessageDialog(null, "su precio es de"+ numero2 );
-                }else if (numero2 == 3){
+                    JOptionPane.showMessageDialog(null, "su precio es de" + numero2);
+                } else if (numero2 == 3) {
                     numero2 = 2000;
-                    JOptionPane.showMessageDialog(null, " Su precio es de "+ numero2);
-                }else if (numero2 == 4){
+                    JOptionPane.showMessageDialog(null, " Su precio es de " + numero2);
+                } else if (numero2 == 4) {
                     numero2 = 2000;
                 }
                 break;
-                    
-                
 
             case 3:
                 JOptionPane.showMessageDialog(null, "Escoge el Sabor de Crepa");
@@ -78,31 +72,41 @@ public class CatalogoOrdenar {
                         + "3- Manzana ₡2000\n"
                         + "4- Caribean Style ₡2500\n"
                         + "5- Volver al menú\n"));
-              if (numero3 == 1) {
+                if (numero3 == 1) {
+                    numero3 = 3000;
+                    JOptionPane.showMessageDialog(null, "Su precio es de " + numero3);
+                } else if (numero3 == 2) {
                     numero2 = 3000;
-                    JOptionPane.showMessageDialog(null, "Su precio es de "+ numero3);
-                }else if (numero3 == 2) {
-                    numero2 = 3000;
-                            JOptionPane.showMessageDialog(null, "su precio es de"+ numero3 );
-                }else if (numero3 == 3){
+                    JOptionPane.showMessageDialog(null, "su precio es de" + numero3);
+                } else if (numero3 == 3) {
                     numero2 = 2000;
-                    JOptionPane.showMessageDialog(null, " Su precio es de "+ numero3);
-                }else if (numero3 == 4){
+                    JOptionPane.showMessageDialog(null, " Su precio es de " + numero3);
+                } else if (numero3 == 4) {
                     numero2 = 2500;
                 }
                 break;
-                    
-                
 
             case 4:
                 JOptionPane.showMessageDialog(null, "Escoge el sabor de tu cono");
-                op = JOptionPane.showInputDialog("Que sabor deseas tu Cono\n"
+                int numero4 = Integer.parseInt(JOptionPane.showInputDialog("Que sabor deseas tu Cono\n"
                         + "1.Fresa ₡1000\n"
-                        + "2.Vainilla ₡1000\n"
-                        + "3.Chocolate ₡1000\n"
-                        + "4.Caramelo ₡1000\n"
-                        + "5.Oreo ₡1000\n"
-                        + "6.Salir\n");
+                        + "2.Chocolate ₡1000\n"
+                        + "3.Caramelo ₡1700\n"
+                        + "4.Oreo ₡1500\n"
+                        + "Salir\n"));
+                if (numero4 == 1) {
+                    numero4 = 1000;
+                    JOptionPane.showMessageDialog(null, "Su precio es de " + numero4);
+                } else if (numero4 == 2) {
+                    numero2 = 1000;
+                    JOptionPane.showMessageDialog(null, "su precio es de" + numero4);
+                } else if (numero4 == 3) {
+                    numero2 = 1700;
+                    JOptionPane.showMessageDialog(null, " Su precio es de " + numero4);
+                } else if (numero4 == 4) {
+                    numero4 = 1500;
+                }
+                break;
 
             case 5:
                 JOptionPane.showMessageDialog(null, "Salir del menú");
