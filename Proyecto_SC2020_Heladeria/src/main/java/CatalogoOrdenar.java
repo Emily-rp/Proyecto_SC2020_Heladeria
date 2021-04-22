@@ -47,17 +47,28 @@ public class CatalogoOrdenar {
     
 
             case 2:
-                JOptionPane.showInternalMessageDialog(null, "Escoge un Sunday a tu preferencia");
+                JOptionPane.showInternalMessageDialog(null, "Escoge un Sundae a tu preferencia");
                 int numero2 = Integer.parseInt(JOptionPane.showInputDialog("Escoge entre diferentes sabores tú Sundae:\n"
                         + "1.Fresa ₡2000\n"
                         + "2.vainilla ₡2000\n"
                         + "3.chocolate ₡2000\n"
                         + "4.caramelo ₡2000\n"
-                        + "5.Salir"));
-                if (numero2 == 2) {
+                        + "5.Salir\n"));
+                if (numero2 == 1) {
                     numero2 = 2000;
-                    JOptionPane.showMessageDialog(null, "Su precio es de 2000");
+                    JOptionPane.showMessageDialog(null, "Su precio es de "+ numero2);
+                }else if (numero2 == 2) {
+                    numero2 = 3000;
+                            JOptionPane.showMessageDialog(null, "su precio es de"+ numero2 );
+                }else if (numero2 == 3){
+                    numero2 = 3500;
+                    JOptionPane.showMessageDialog(null, " Su precio es de "+ numero2);
+                }else if (numero2 == 4){
+                    numero2 = 4000;
                 }
+                break;
+                    
+                
 
             case 3:
                 JOptionPane.showMessageDialog(null, "Escoge el Sabor de Crepa");
