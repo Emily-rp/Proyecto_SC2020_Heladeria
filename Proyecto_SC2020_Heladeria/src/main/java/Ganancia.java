@@ -8,17 +8,21 @@
  */
 public class Ganancia {
 
-    private double montoActual;
+    private double montoActual = 4000000;
+
+    Empleado empleado1 = new Empleado();
 
     public Ganancia() {
     }
 
-    public Ganancia(int montoActual) {
-        this.montoActual = montoActual;
+    public double gastosTotal() {
+        empleado1.datosEmpleado();
+        montoActual = montoActual - empleado1.totalPlanilla();
+        return montoActual;
     }
 
-    public void depositar(double ingreso) {
-        montoActual = montoActual + ingreso;
+    public double ingresosTotal() {
+        return montoActual;
     }
 
     public double getMontoActual() {
@@ -28,4 +32,5 @@ public class Ganancia {
     public void setMontoActual(double montoActual) {
         this.montoActual = montoActual;
     }
+
 }

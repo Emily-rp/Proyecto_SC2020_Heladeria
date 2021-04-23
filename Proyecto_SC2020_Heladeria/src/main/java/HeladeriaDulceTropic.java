@@ -40,7 +40,7 @@ public class HeladeriaDulceTropic {
                     break;
 
                 case 2:
-                    JOptionPane.showMessageDialog(null, "Bienvenido al menú de adminitrador");
+                    JOptionPane.showMessageDialog(null, "Bienvenido(a) al menú de administrador");
                     int contador = 1;
 
                     do {
@@ -48,14 +48,14 @@ public class HeladeriaDulceTropic {
                         contrasena = JOptionPane.showInputDialog("Escriba su contraseña");
 
                         if (usuario.equals(admi1.getUsuario()) && contrasena.equals(admi1.getContrasena())) {
-                            JOptionPane.showMessageDialog(null, "Bienvenido");
+                            JOptionPane.showMessageDialog(null, "Bienvenido(a)");
                             admi1.menu();// aquí entra al menú de adminitrador
                             break;
                         }// aqui el usuario y contrasenna son iguales y entran al menú adminitradtivo.
-                        else if (!usuario.equals(admi1.getUsuario()) && !contrasena.equals(admi1.getContrasena())) {
+                        else if (!usuario.equals(admi1.getUsuario()) || !contrasena.equals(admi1.getContrasena())) {
                             JOptionPane.showConfirmDialog(null, "Su usuario o contraseña son incorrectos"
                                     + "\nLleva " + contador + " intentos de 3, \n¿Desea volver a intentarlo?");
-                            
+
                             if (contador == 3) {
                                 JOptionPane.showMessageDialog(null, "Lo sentimos, ya utilizó los 3 intentos permitidos");
                                 break;

@@ -4,6 +4,7 @@ import javax.swing.JOptionPane;
 public class RegistroCliente {
 
     private Cliente registro[] = new Cliente[10];
+    CatalogoOrdenar ordenar1 = new CatalogoOrdenar();
 
     public RegistroCliente() {
         for (int i = 0; i < 10; i++) {
@@ -28,6 +29,7 @@ public class RegistroCliente {
                 registro[i].setTelefono(elTelefono);
                 registro[i].setFechaCumpleano(elCumple);
                 registro[i].setEdad(laEdad);
+                registro[i].setEstado(true);
                 JOptionPane.showMessageDialog(null, "Hola " + registro[i].getNombre()
                         + " bienvenido(a) al la familia Dulce Tropic"
                         + "\nSu registro fue realizado con exito, su usuario y contraseña son las siguientes:"
@@ -35,7 +37,8 @@ public class RegistroCliente {
                         + "\nContraseña: " + registro[i].getContrasena()
                         + "\nGuarde con cuidado los datos"
                         + "\n\nAl completar dicho registro podrá venir el " + registro[i].getFechaCumpleano()
-                        + " por un helado ¡GRATIS!");
+                        + " por un helado ¡GRATIS!"
+                        + "\nAdicional podrá disfrutar de descuentos y acumular Trpic Puntos");
                 break;
             }//fin if
         }//for
@@ -49,6 +52,7 @@ public class RegistroCliente {
                 String laContrasena = JOptionPane.showInputDialog("Escriba su contraseña");
                 if (registro[i].getUsuario().equals(elUsuario) && registro[i].getContrasena().equals(laContrasena)) {
                     JOptionPane.showMessageDialog(null, "Bienvenido " + registro[i].getNombre());
+                    ordenar1.Ordenar();
                     contador = 3;
                     break;
                 }// inicia sesión
@@ -66,14 +70,22 @@ public class RegistroCliente {
     }// iniciarSesion
 
     public void mostrarClientes() {
+
         JOptionPane.showMessageDialog(null, "Dulce Topic consta de " + (registro.length)
-                + " clientes registrados, los cuales son: ");
+                + " espacios para registro de usuarios. ");
         for (int i = 0; i < 10; i++) {
-            JOptionPane.showMessageDialog(null, "Los datos del cliente " + (i + 1) + "son: "
+            if(registro[i].isEstado()){
+            JOptionPane.showMessageDialog(null, "Los Datos de los usuarios Registrados son:");
+            JOptionPane.showMessageDialog(null, "Los datos del cliente " + (i + 1) + ": "
                     + "\nNombre: " + registro[i].getNombre()
                     + "\nEdad: " + registro[i].getEdad()
                     + "\nCumpleaños: " + registro[i].getFechaCumpleano()
                     + "\nTelefono:" + registro[i].getTelefono());
+            }
+            if(!registro[i].isEstado()){
+                JOptionPane.showMessageDialog(null, "Aun no tiene usuarios registrados");
+                break;
+            }
         }//for
     }//mostrarClientes
 

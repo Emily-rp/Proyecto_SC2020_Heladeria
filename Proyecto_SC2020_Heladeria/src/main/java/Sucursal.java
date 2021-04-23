@@ -14,8 +14,7 @@ public class Sucursal {
     private String encargadoNombre;
     private String encargadoapellido;
     private String horario = "Lunes - Viernes: 11:00 am a 8:00pm "
-            + "\nSábado y Domigo: 8:00am a 8:00pm";
-    
+            + "\n              Sábado y Domigo: 8:00am a 8:00pm";
 
     public Sucursal() {
     }
