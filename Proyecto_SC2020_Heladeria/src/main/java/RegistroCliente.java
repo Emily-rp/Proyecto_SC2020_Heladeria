@@ -74,15 +74,15 @@ public class RegistroCliente {
         JOptionPane.showMessageDialog(null, "Dulce Topic consta de " + (registro.length)
                 + " espacios para registro de usuarios. ");
         for (int i = 0; i < 10; i++) {
-            if(registro[i].isEstado()){
-            JOptionPane.showMessageDialog(null, "Los Datos de los usuarios Registrados son:");
-            JOptionPane.showMessageDialog(null, "Los datos del cliente " + (i + 1) + ": "
-                    + "\nNombre: " + registro[i].getNombre()
-                    + "\nEdad: " + registro[i].getEdad()
-                    + "\nCumpleaños: " + registro[i].getFechaCumpleano()
-                    + "\nTelefono:" + registro[i].getTelefono());
+            if (registro[i].isEstado()) {
+                JOptionPane.showMessageDialog(null, "Los Datos de los usuarios Registrados son:");
+                JOptionPane.showMessageDialog(null, "Los datos del cliente " + (i + 1) + ": "
+                        + "\nNombre: " + registro[i].getNombre()
+                        + "\nEdad: " + registro[i].getEdad()
+                        + "\nCumpleaños: " + registro[i].getFechaCumpleano()
+                        + "\nTelefono:" + registro[i].getTelefono());
             }
-            if(!registro[i].isEstado()){
+            if (!registro[i].isEstado()) {
                 JOptionPane.showMessageDialog(null, "Aun no tiene usuarios registrados");
                 break;
             }
