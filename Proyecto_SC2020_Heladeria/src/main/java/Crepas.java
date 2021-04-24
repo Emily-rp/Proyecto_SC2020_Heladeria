@@ -9,12 +9,15 @@ crepa tendra los ingredientes, que al pedirla estos se rebajaran del inventario
  * @author emily
  */
 public class Crepas {
-String nombre;
-int precio;
-String ingredientes;
-int cantidad;
 
-    public Crepas(){}
+    String nombre;
+    int precio;
+    String ingredientes;
+    int cantidad;
+
+    public Crepas() {
+    }
+
     public Crepas(String nombre, int precio, String ingredientes, int cantidad) {
         this.nombre = nombre;
         this.precio = precio;
@@ -22,15 +25,16 @@ int cantidad;
         this.cantidad = cantidad;
     }
 
-public void comprar(){
-    // aqui se deposita el dinero en la clase Ganacia
-}    
-public void rebajoIngredientes(){
-    // aqui se rebaja los ingretes del inventario
-}    
+    public void comprar() {
+        // aqui se deposita el dinero en la clase Ganacia
+    }
 
-public void mostrarCompra(){
-    //aqui se ve la compra 
-}
+    public void rebajoIngredientes() {
+        // aqui se rebaja los ingretes del inventario
+    }
+
+    public void mostrarCompra() {
+        //aqui se ve la compra 
+    }
 
 }

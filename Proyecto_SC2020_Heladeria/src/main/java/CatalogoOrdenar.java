@@ -5,7 +5,7 @@ import javax.swing.JOptionPane;
 //este sera donde se muestre el menu para ordenar los helados
 public class CatalogoOrdenar {
 
-    public static void main(String[] args) {
+    public void Ordenar() {
         int opcion = 0;
         String op = "";
         Scanner LeerPrecios = new Scanner(System.in);

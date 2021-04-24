@@ -12,9 +12,10 @@ import javax.swing.JOptionPane;
  */
 public class Ordenar {
 
+    CatalogoOrdenar catalogo1 = new CatalogoOrdenar();
+    RegistroCliente registro1 = new RegistroCliente();
+
     public void menu() {
-        MenuRestaurante menuR = new MenuRestaurante();
-        RegistroCliente registro1 = new RegistroCliente();
 
         int opcion = 0;
         do {
@@ -33,9 +34,13 @@ public class Ordenar {
                     break;
                 case 2:
                     registro1.registrar();
+                    JOptionPane.showMessageDialog(null, "Su registro se realizó, ya puede iniciar sesión");
+
                     break;
                 case 3:
-
+                    JOptionPane.showMessageDialog(null, "Bienvenido al menú de invitado, recuerde que "
+                            + "al registrarse tendra beneficios de cliente frecuente");
+                    catalogo1.Ordenar();
                     break;
             }
 

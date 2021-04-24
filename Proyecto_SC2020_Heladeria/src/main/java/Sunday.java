@@ -9,10 +9,10 @@
  * @author emily
  */
 public class Sunday {
-String nombre;
-int precio;
-String ingredientes;
-int cantidad;   
-//ricos helados
-// tiens razón
+
+    String nombre;
+    int precio;
+    String ingredientes;
+    int cantidad;
+
 }

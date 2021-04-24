@@ -20,11 +20,11 @@ public class Empleado {
     private int horasSemana;
     private float pagoHora;
     double salarioBruto;
-    float suma;
+    private double planilla;
 
     private Empleado arreglo[] = new Empleado[10];
     Adminitrador admi = new Adminitrador();
-    Sucursal encargado = new Sucursal("Jorge","Jiménez");
+    Sucursal encargado = new Sucursal("Jorge", "Jiménez");
 
     public Empleado() {
     }
@@ -42,20 +42,19 @@ public class Empleado {
     public Empleado(float salarioBruto) {
         this.salarioBruto = salarioBruto;
     }
-    
+
     public void datosEmpleado() {
-        arreglo[0] = new Empleado(encargado.getEncargadoNombre(),encargado.getEncargadoapellido(),"1 5348 2384","Encargado",31,45,700000);
-        arreglo[1] = new Empleado("Max", "Pacheco", "1 9402 4822","Cajero",30,20,300000);
-        arreglo[2] = new Empleado("Luciana", "Ricati", "9 3128 3123","Cajero",45,25,380000);
-        arreglo[3] = new Empleado("Valeri","García","1 8395 38973", "Cocina",22,45,500000);
-        arreglo[4] = new Empleado("Luis", "Soto","3 8403 0982","Cocina",27,45,500000);
-        arreglo[5] = new Empleado("Guillermo","Pacheco","3 8924 8732","Encargado de Cocina",39,45,600000);
-        arreglo[6] = new Empleado("Esteban", "Sanchez", "2 9873 3234","Mesero",38,40,500000);
-        arreglo[7] = new Empleado("Otto","Soto","3 2574 8928","Mesero",30,45,5800000);
-        arreglo[8] = new Empleado("Marcela","Cabrera","1 9483 8283","Limpieza",37,45,300000);
-        arreglo[9] = new Empleado("Amanda","nuñez","1 9374 2123","servicio de eventos", 24,30,450000);
-        
-        
+        arreglo[0] = new Empleado(encargado.getEncargadoNombre(), encargado.getEncargadoapellido(), "1-5348-2384", "Encargado", 31, 45, 1800);
+        arreglo[1] = new Empleado("Max", "Pacheco", "1-9402-4822", "Cajero", 30, 20, 1200);
+        arreglo[2] = new Empleado("Luciana", "Ricati", "9-3128-3123", "Cajero", 45, 25, 1450);
+        arreglo[3] = new Empleado("Valeri", "García", "1-8395-38973", "Cocina", 22, 45, 1450);
+        arreglo[4] = new Empleado("Luis", "Soto", "3-8403-0982", "Cocina", 27, 45, 1450);
+        arreglo[5] = new Empleado("Guillermo", "Pacheco", "3-8924-8732", "Encargado de Cocina", 39, 45, 1700);
+        arreglo[6] = new Empleado("Esteban", "Sanchez", "2-9873-3234", "Mesero", 38, 40, 1300);
+        arreglo[7] = new Empleado("Otto", "Soto", "3-2574-8928", "Mesero", 30, 45, 1300);
+        arreglo[8] = new Empleado("Marcela", "Cabrera", "1-9483-8283", "Limpieza", 37, 45, 1200);
+        arreglo[9] = new Empleado("Amanda", "nuñez", "1-9374-2123", "servicio de eventos", 24, 30, 1400);
+
     }// fin datosEmpleado
 
     public void mostrarEmpleado() {
@@ -74,8 +73,9 @@ public class Empleado {
                     + "\n8. " + arreglo[7].nombre + " " + arreglo[7].apellido
                     + "\n9. " + arreglo[8].nombre + " " + arreglo[8].apellido
                     + "\n10. " + arreglo[9].nombre + " " + arreglo[9].apellido
-                    + "\nDigite 1 para consultar los datos de todos los empleados"
-                    + "\nDigite 0 para ir al menú de adminitrador");
+                    + "\n\nDigite el nombre del empleado a consultar."
+                    + "\nDigite 1 para consultar los datos de todos los empleados."
+                    + "\nDigite 0 para ir al menú de adminitrador.");
 
             for (int i = 0; i < arreglo.length; i++) {
                 if (arreglo[i].nombre.equals(elNombre)) {
@@ -85,19 +85,24 @@ public class Empleado {
                             + "\nCédula: " + arreglo[i].cedula
                             + "\nCargo: " + arreglo[i].cargo
                             + "\nEdad: " + arreglo[i].edad
-                            + "\nSalario: "+ salarioBruto);
+                            + "\nHoras trabajadas por semana: " + arreglo[i].horasSemana
+                            + "\nPago por hora: ¢." + arreglo[i].pagoHora
+                            + "\nSalario: ¢." + salarioBruto);
                     salir = 1;
                     break;
 
                 } else if (elNombre.equals("1")) { //muestra todos los empleados
                     for (int j = 0; j < arreglo.length; j++) {
+                        salarioBruto = arreglo[j].horasSemana * arreglo[j].pagoHora;
                         JOptionPane.showMessageDialog(null,
                                 "Datos del empleado " + (j + 1)
-                                + "\nNombre: " + arreglo[j].nombre + " "+ arreglo[j].apellido
+                                + "\nNombre: " + arreglo[j].nombre + " " + arreglo[j].apellido
                                 + "\nCédula: " + arreglo[j].cedula
                                 + "\nCargo: " + arreglo[j].cargo
                                 + "\nEdad: " + arreglo[j].edad
-                                + "\nSalario: " + salarioBruto);
+                                + "\nHoras trabajadas por semana: " + arreglo[i].horasSemana
+                                + "\nPago por hora: ¢." + arreglo[i].pagoHora
+                                + "\nSalario: ¢." + salarioBruto);
                     }
                     break;
                 } else if (elNombre.equals("0")) {
@@ -108,9 +113,14 @@ public class Empleado {
         } while (salir != 0);
     }//mostrarEmpleado
 
-    public void totalPlanilla(){
-        for(int i = 0; i < arreglo.length; i++)
+    public double totalPlanilla() {
+        for (int i = 0; i < arreglo.length; i++) {
+            salarioBruto = arreglo[i].horasSemana * arreglo[i].pagoHora;
+            planilla += salarioBruto;
+        }
+        return planilla;
     }
+
     //Setter and Getters ----------------------------------------------------
     public int getHorasSemana() {
         return horasSemana;
@@ -128,7 +138,7 @@ public class Empleado {
         this.pagoHora = pagoHora;
     }
 
-    public float getSalarioBruto() {
+    public double getSalarioBruto() {
         return salarioBruto;
     }
 

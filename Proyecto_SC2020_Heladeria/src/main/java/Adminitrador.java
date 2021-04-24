@@ -38,14 +38,24 @@ public class Adminitrador {
                     empleado1.mostrarEmpleado();
                     break;
                 case 2:
+                    empleado1.datosEmpleado();
                     sucursal1.datosSucursal();
                     break;
                 case 3://inventario
                     break;
                 case 4:
                     registro.mostrarClientes();
+
                     break;
                 case 5://ganancia
+                    empleado1.datosEmpleado();
+                    JOptionPane.showInputDialog(
+                            "Monto de inicio de mes: ¢." + ganancia1.getMontoActual()
+                            + "\n\n• Gastos de la empresa: "
+                            + "\nEl gasto en pagos de planilla corresponde a: ¢." + empleado1.totalPlanilla()
+                            + "\nPara un monto total de: ¢." + ganancia1.gastosTotal()
+                            + "\n\n• Ingresos de la empresa: "
+                            + "\nIngresos de vetas: ¢." + null);
                     break;
 
             }// fin switch
