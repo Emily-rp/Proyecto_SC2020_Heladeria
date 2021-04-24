@@ -26,7 +26,7 @@ public class CatalogoOrdenar {
                         + "2- Helado Oreo ₡2000\n"
                         + "3- Helado Chicle ₡2500\n"
                         + "4-Helado light ₡2000\n"
-                        + "5-Vuelve al menú Principal\n"));
+                        + "5-Salir del menú Principal\n"));
 
                 if (numero1 == 1) {
                     numero1 = 2000;
@@ -71,18 +71,19 @@ public class CatalogoOrdenar {
                         + "2- frutos del bosque ₡3000\n"
                         + "3- Manzana ₡2000\n"
                         + "4- Caribean Style ₡2500\n"
-                        + "5- Volver al menú\n"));
+                        + "5- salir del menu"
+                       ));
                 if (numero3 == 1) {
                     numero3 = 3000;
                     JOptionPane.showMessageDialog(null, "Su precio es de " + numero3);
                 } else if (numero3 == 2) {
-                    numero2 = 3000;
+                    numero3 = 3000;
                     JOptionPane.showMessageDialog(null, "su precio es de" + numero3);
                 } else if (numero3 == 3) {
-                    numero2 = 2000;
+                    numero3 = 2000;
                     JOptionPane.showMessageDialog(null, " Su precio es de " + numero3);
                 } else if (numero3 == 4) {
-                    numero2 = 2500;
+                    numero3 = 2500;
                 }
                 break;
 
@@ -98,10 +99,10 @@ public class CatalogoOrdenar {
                     numero4 = 1000;
                     JOptionPane.showMessageDialog(null, "Su precio es de " + numero4);
                 } else if (numero4 == 2) {
-                    numero2 = 1000;
+                    numero4 = 1000;
                     JOptionPane.showMessageDialog(null, "su precio es de" + numero4);
                 } else if (numero4 == 3) {
-                    numero2 = 1700;
+                    numero4 = 1700;
                     JOptionPane.showMessageDialog(null, " Su precio es de " + numero4);
                 } else if (numero4 == 4) {
                     numero4 = 1500;
